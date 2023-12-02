@@ -1,0 +1,27 @@
+package org.assessment2;
+import java.util.Scanner;
+public class FibonacciSeries {
+
+	public static void main(String[] args) {
+		 FibonacciSeries fs=new FibonacciSeries();
+		 
+		
+			    Scanner sc = new Scanner (System.in);
+			    System.out.println("Enter The number");
+			    int n=sc.nextInt();
+			    for (int i = n-1; i>=0; i--) {
+			      System.out.println(fs.fibbo(i));
+			    }
+			  }
+			  public  int fibbo(int n) {
+			    if (n == 0) {
+			      return 0;
+			    } else if (n == 1) {
+			      return 1;
+			    } else {
+			      return fibbo(n - 1) + fibbo(n - 2);
+			    }
+			    
+			    
+			  }
+}
